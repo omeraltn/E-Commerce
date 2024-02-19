@@ -1,0 +1,369 @@
+/* Google Fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --primary-color: crimson;
+  --secondary-color: #2c2c2c;
+  --white: #fff;
+  --bgcolor: #eae9e9;
+}
+
+/* Header alanı*/
+header {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  top: 0;
+  position: fixed;
+  background-color: var(--white);
+  z-index: 999;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  height: auto;
+}
+
+header .nav-left img {
+  width: 130px;
+}
+header .nav-center ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 20px;
+  font-size: 1.1rem;
+}
+
+header .nav-center ul li a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+header .nav-center ul li a:hover {
+  color: var(--primary-color);
+  transition: 0.5s;
+}
+header .nav-right {
+  font-size: 20px;
+}
+header .nav-right a {
+  margin-left: 8px;
+  color: var(--secondary-color);
+}
+header .nav-right a:hover {
+  color: var(--primary-color);
+  transition: 0.5s;
+}
+
+/* main alanı*/
+
+.main-home {
+  width: 100%;
+  height: 100vh;
+  background: url(images/banner-3.png);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+}
+.main-home .main-text {
+  margin-left: 15px;
+}
+.main-home h5 {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+}
+.main-home h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 0.9;
+}
+
+.main-home p {
+  font-style: italic;
+  font-weight: 200;
+  text-indent: 7px;
+  margin-bottom: 20px;
+}
+
+.main-home .main-text a {
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+  font-size: 30px;
+  color: var(--secondary-color);
+  text-decoration: none;
+  border-radius: 5px;
+}
+.main-home .main-text a:hover {
+  color: var(--white);
+  background-color: var(--secondary-color);
+}
+
+/* producuts*/
+.products {
+  text-align: center;
+  font-weight: 500px;
+  font-size: 25px;
+  padding: 15px;
+}
+.products span {
+  color: var(--primary-color);
+}
+/* shop*/
+
+.shop {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+  gap: 10px;
+}
+.shop .box {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  position: relative;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.shop .box img {
+  width: 100%;
+  height: auto;
+}
+.shop .box:hover {
+  scale: 0.97;
+  transition: 0.5s;
+}
+
+.shop .box .sale {
+  border: 1px solid red;
+  color: var(--white);
+  background-color: var(--primary-color);
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  padding: 0 3px 0 3px;
+}
+.shop .box div.star-heart {
+  color: orange;
+  font-size: 20px;
+  display: flex;
+}
+.shop .box div.star-heart .fa-heart {
+  color: red;
+  position: absolute;
+  right: 5px;
+}
+.shop .box p {
+  font-size: 1.2rem;
+  color: gray;
+}
+.shop .box span {
+  color: green;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+/* reviews*/
+.reviews {
+  text-align: center;
+  padding: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: #eae9e9;
+}
+.reviews div img {
+  width: 100px;
+  height: 100px;
+  object-position: center;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.reviews p:nth-child(1) {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.reviews p:nth-child(3) {
+  color: gray;
+  font-style: italic;
+}
+.reviews p:nth-child(5) {
+  color: gray;
+}
+
+/* date */
+
+section .date {
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 20px;
+}
+
+/* down*/
+.down {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+}
+.down .box1 {
+  margin: 0 15px 10px 15px;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+.down .box1:hover {
+  scale: 0.95;
+  transition: 0.5s;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.down div div img {
+  width: 100%;
+  height: auto;
+}
+.down .box1 p:nth-child(2) {
+  font-size: 14px;
+  color: rgb(83, 82, 82);
+}
+.down .box1 p:nth-child(3) {
+  font-size: 18px;
+  color: black;
+  margin-bottom: 10px;
+}
+.down .box1 p:nth-child(4) {
+  font-size: 18px;
+  color: gray;
+}
+.down .box1 p:nth-child(5) a {
+  text-decoration: none;
+  font-size: 12px;
+  color: black;
+}
+.down .box1 p:nth-child(5) a:hover {
+  font-size: 12.3px;
+  color: green;
+}
+/* maps*/
+.dip {
+  margin-bottom: 30px;
+}
+.dip .arrows {
+  text-align: center;
+  margin: 20px;
+  transition: 0.2s;
+}
+.dip .arrows a i {
+  font-size: 25px;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 10px;
+}
+.dip .arrows a i:link {
+  color: black;
+}
+.dip .arrows a i:active {
+  color: black;
+}
+.dip .arrows a:visited {
+  color: black;
+}
+.dip .map-text {
+  text-align: center;
+  margin-right: 20px;
+}
+.dip .map-text i {
+  font-size: 30px;
+}
+.dip .map-text p:nth-child(2) {
+  font-size: 23px;
+}
+.dip .map-text p:nth-child(3) {
+  color: gray;
+  font-style: italic;
+}
+.dip .maps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* footer alanı*/
+footer {
+  padding-top: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  column-gap: 10px;
+  background-color: #eae9e9;
+}
+
+footer .footer-1 ul {
+  list-style: none;
+}
+
+footer .footer-1 ul li {
+  margin-bottom: 10px;
+}
+footer .footer-1 ul li img {
+  cursor: pointer;
+}
+footer .footer-1 ul li a {
+  text-decoration: none;
+  color: gray;
+}
+footer .footer-1 ul li a:hover {
+  color: var(--primary-color);
+}
+
+/* icons alanı*/
+.icons {
+  padding: 10px 0;
+  background-color: #2c2c2c;
+}
+.icons .icon a i {
+  margin: 5px;
+  color: gray;
+  font-size: 1.2rem;
+}
+.icons .icon a i:hover {
+  color: var(--white);
+  transform: scale(1.1);
+}
+
+/* responsive*/
+@media (max-width: 700px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section .maps {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  section .maps .map-text {
+    margin-right: 2px;
+  }
+  section .maps .map {
+    text-align: left;
+  }
+  section div iframe {
+    width: 80%;
+  }
+}
+
+@media (max-width: 450px) {
+  footer div.footer-1 ul {
+    font-size: 12px;
+    margin-left: 1px;
+    margin-right: 1px;
+  }
+}

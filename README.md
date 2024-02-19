@@ -1,5 +1,5 @@
 # E-Commerce Website
- Tüm ekranlara duyarlı responsive bir e-ticaret websitesigeliştirildi.
+ Tüm ekranlara duyarlı responsive bir e-ticaret websitesi geliştirildi...
 
 # Kullanılan Teknolojiler
 - HTML
@@ -10,11 +10,11 @@
 - Fontawesome
 
 # Ekran Görüntüleri
-![](images/screen.jpg)
+![](images/screen.png)
 
 # Video
 
-![](images/e-commerce.mp4)
+![](images/ecommerce.mp4)
 
 # Gif
 ![]()
